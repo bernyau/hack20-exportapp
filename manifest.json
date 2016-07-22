@@ -1,15 +1,19 @@
 {
-  "manifest_version": 2,
-  "name": "Hack20 - Export App",
-  "version": "0.01",
-  "minimum_chrome_version": "23",
-  "icons": {
-    "16": "icon_16.png",
-    "128": "icon_128.png"
-  },
-  "app": {
-    "background": {
-      "scripts": ["main.js"]
-    }
-  }
+    "manifest_version": 2,
+    "name": "Hack20 - Export App",
+    "version": "0.01",
+    "minimum_chrome_version": "34",
+    "icons": {
+        "16": "icon_16.png",
+        "128": "icon_128.png"
+    },
+    "app": {
+        "background": {
+            "scripts": ["main.js"]
+        }
+    },
+    "permissions": [
+      "desktopCapture"
+  ]
+
 }
