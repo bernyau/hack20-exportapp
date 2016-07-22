@@ -13,7 +13,23 @@
         }
     },
     "permissions": [
-      "desktopCapture"
-  ]
+    "activeTab",
+    "https://api.domain.com/"
+  ],
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+    }
+  ],
+
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Test",
+        "default_popup": "index.html"
+    }
 
 }
